@@ -1,0 +1,153 @@
+:root {
+    --primary-clr: rgb(40, 40, 40);
+    --secondary-bg: dodgerblue;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+/*==========| Global Styles |==========*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li {
+    font-family: "Open Sans", sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p,
+li,
+a {
+    font-size: 1.4rem;
+    line-height: 150%;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+button {
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+/*==========| Reusable Styles |==========*/
+.section {
+    text-align: center;
+    padding: 10rem 2rem;
+}
+
+/*==========| Header Section |==========*/
+header {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(assets/banner.jpg);
+    background-position: center right;
+    background-size: cover;
+    height: 100vh;
+}
+
+nav {
+    padding: 2.5rem 0 0;
+}
+
+.nav__btn-group {
+    display: none;
+    background-color: green;
+}
+
+.logo img {
+    width: 13rem;
+    margin: 0 auto;
+    filter: invert(1);
+}
+
+.header__contents {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.header__contents h1 {
+    font-size: 3rem;
+}
+
+.header__contents p {
+    font-size: 1.7rem;
+    margin: 2.5rem 0;
+}
+
+.banner__btn-group {
+    margin-top: 4rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__btn {
+    padding: 1.5rem 5rem;
+    font-size: 1.7rem;
+    color: white;
+    border-radius: 5rem;
+}
+
+.banner__btn.secondary-bg {
+    background: var(--secondary-bg);
+}
+
+.banner__btn.transparent-bg {
+    background: transparent;
+    border: 1px solid white;
+}
+
+.banner__btn.transparent-bg i {
+    padding-left: 0.5rem;
+}
+
+.banner__btn:hover {
+    background: white;
+    color: black;
+}
+
+.arrow-down {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    padding-bottom: 2.5rem;
+    opacity: 0.5;
+}
+
+/*==========| Section #1 |==========*/
+.section1 {
+    background: rgba(0, 255, 0, 0.2);
+}
